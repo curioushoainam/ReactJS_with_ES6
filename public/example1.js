@@ -21,6 +21,17 @@ class Person {
 		return "Hallo " + this.name + ". Your id is " + this.id;
 	}
 }
+// var p = new Person('vhd',88);
+// console.log(p.greeting());
+class Child extends Person{
+	constructor(name,id,land){
+		super(name,id);
+		this.land = land;
+	}
+	greeting(){
+		return this.name + ' - ' + this.id + ' - ' +this.land;
+	}
+}
 
-var p = new Person('vhd',88);
-console.log(p.greeting());
+var ch = new Child('vhd',88,'QNg');
+console.log(ch.greeting());

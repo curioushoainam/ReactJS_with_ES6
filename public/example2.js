@@ -31,7 +31,15 @@ class Note extends React.Component {
 	}
 }
 
+Note.defaultProps = {
+	txt: "O_O"
+}
+
 ReactDOM.render(
-	<Note txt="Freitag"></Note>
+	<div>
+		<Note/>
+		<hr/>
+		<Note txt="Freitag"></Note>
+	</div>	
 	,document.getElementById('root')
 );
